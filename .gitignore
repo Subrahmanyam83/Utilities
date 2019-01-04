@@ -1,0 +1,6 @@
+.DS_Store
+.idea/*
+".idea/workspace (Subrahmanyam\342\200\231s MacBook's conflicted copy 2018-03-10).xml"
+.idea/workspace.xml
+target/
+testmaven.iml
