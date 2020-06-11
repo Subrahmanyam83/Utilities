@@ -42,4 +42,6 @@ public class TakeFullScreenshotOfPage {
         driver.close();
 
     }
+
+
 }

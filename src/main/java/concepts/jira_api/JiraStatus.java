@@ -4,7 +4,7 @@ public class JiraStatus {
 
     private String name;
 
-    public String getName() {
+    private String getName() {
         return name;
     }
 
@@ -13,3 +13,11 @@ public class JiraStatus {
         return name;
     }
 }
+
+
+
+
+
+
+
+

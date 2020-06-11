@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite Name"  parallel="tests" configfailurepolicy="continue" >
+    <!-- suite name="Suite Name" -->
+
+
+    <test name="TestA" parallel="methods" >
+        <classes>
+            <class name ="concepts.TestNGParallel.TestA"/>
+            <class name ="concepts.TestNGParallel.TestB"/>
+            <class name ="concepts.TestNGParallel.TestC"/>
+
+
+        </classes>
+    </test>
+
+    <test name="TestB" parallel="methods" >
+        <classes>
+            <class name ="concepts.TestNGParallel.TestA"/>
+            <class name ="concepts.TestNGParallel.TestB"/>
+            <class name ="concepts.TestNGParallel.TestC"/>
+        </classes>
+    </test>
+
+    <test name="TestC" parallel="methods" >
+        <classes>
+            <class name ="concepts.TestNGParallel.TestA"/>
+            <class name ="concepts.TestNGParallel.TestB"/>
+            <class name ="concepts.TestNGParallel.TestC"/>
+        </classes>
+    </test>
+
+
+
+</suite>

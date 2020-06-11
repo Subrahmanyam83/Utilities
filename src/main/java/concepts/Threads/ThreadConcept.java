@@ -1,4 +1,4 @@
-package concepts;
+package concepts.Threads;
 
 public class ThreadConcept {
 

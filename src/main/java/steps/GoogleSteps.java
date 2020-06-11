@@ -20,6 +20,11 @@ public class GoogleSteps {
         gpage.navigate();
     }
 
+    @Given("^This is just a test given statement$")
+    public void testGivenMethod() {
+        System.out.println("Hi.. I am working..");
+    }
+
     @Given("^I open google and search for$")
     public void iOpenGoogleAndSearchForData(DataTable data) throws Throwable {
         System.getProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");

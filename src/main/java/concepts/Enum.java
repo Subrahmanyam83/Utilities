@@ -7,6 +7,7 @@ public class Enum {
     int age;
     String name;
 
+
     public enum IMAPTimeout {
         MINUTES(TimeUnit.MINUTES),
         SECONDS(TimeUnit.SECONDS);
@@ -19,7 +20,7 @@ public class Enum {
     }
 
     public static void main(String args[]){
-        System.out.println(IMAPTimeout.MINUTES.time.getClass());
+        System.out.println(IMAPTimeout.MINUTES);
 
     }
 

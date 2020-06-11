@@ -4,7 +4,7 @@ import java.util.Date;
 
 import static java.lang.String.format;
 
-public class JiraTicket {
+public class JiraIssues {
 
     private String key;
 
@@ -38,5 +38,4 @@ public class JiraTicket {
     public JiraFields getFields() {
         return fields;
     }
-
 }

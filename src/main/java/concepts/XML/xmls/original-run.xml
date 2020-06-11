@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="combined-xml-report" skipped="0" tests="3">
+
+    <testcase classname="One" name="Verify if the file exists or not" time="0.075757">
+        <failure message="java.lang.Exception: Failed...&#10;&#9;at steps.TestSteps.checkIfFileExists(TestSteps.java:38)&#10;&#9;at ✽.Given Rerun file exists or not(features/test.feature:12)&#10;"><![CDATA[Given Rerun file exists or not..............................................failed
+
+StackTrace:
+java.lang.Exception: Failed...
+	at steps.TestSteps.checkIfFileExists(TestSteps.java:38)
+	at ✽.Given Rerun file exists or not(features/test.feature:12)
+]]></failure>
+    </testcase>
+    <testcase classname="One" name="Scenario 1" time="0.080755">
+
+        <system-out><![CDATA[Given I kill thread if 15 is more than 20...................................passed
+        ]]></system-out>
+    </testcase>
+    <testcase classname="One" name="Scenario 1" time="0.079475">
+        <failure message="java.lang.ThreadDeath&#10;&#9;at java.lang.Thread.stop(Thread.java:853)&#10;&#9;at steps.TestSteps.iKillThreadIfValueIsMoreThan(TestSteps.java:18)&#10;&#9;at ✽.Given I kill thread if 100 is more than 20(features/test.feature:4)&#10;">
+            <![CDATA[Given I kill thread if 100 is more than 20..................................failed
+
+StackTrace:
+java.lang.ThreadDeath
+	at java.lang.Thread.stop(Thread.java:853)
+	at steps.TestSteps.iKillThreadIfValueIsMoreThan(TestSteps.java:18)
+	at ✽.Given I kill thread if 100 is more than 20(features/test.feature:4)
+]]>
+        </failure>
+    </testcase>
+
+</testsuite>

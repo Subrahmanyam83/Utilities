@@ -9,6 +9,14 @@ import java.io.IOException;
 import java.util.Base64;
 
 public class JiraClient {
+    
+    /*
+    Get the list of the Backlog Items if a bard with boardId (here boardId is 9704)
+    https://jira.baplc.com/rest/greenhopper/1.0/xboard/plan/backlog/data.json?rapidViewId=9704&selectedProjectKey=BTATWO
+
+    Get the list of all the sprints for a Project:
+    https://jira.baplc.com/rest/agile/1.0/board/9704/sprint
+    */
 
     private static final String GET_ISSSUE_END_POINT = "/rest/api/latest/issue/";
     private String jiraServer = "https://jira.baplc.com";
@@ -20,11 +28,7 @@ public class JiraClient {
     @Test
     public void testCaseOne() throws IOException {
         JiraTicket jiraTicket = getResponse();
-        System.out.println("*******************************");
-        System.out.println("*******************************");
-        System.out.println("*******************************");
-        System.out.println("*******************************");
-        System.out.println("*******************************");
+
         System.out.println(jiraTicket.getAssignee());
     }
 
@@ -52,7 +56,8 @@ public class JiraClient {
     private String getBasicAuthentication() {
         String username = System.getenv("JENKINS_USERNAME");
         String password = System.getenv("JENKINS_TOKEN");
-        return new String(Base64.getEncoder().encode((username + ":" + password).getBytes()));
+        return new String(Base64.getEncoder().encode(("n471306" + ":" + "Subu@1234").getBytes()));
     }
+
 
 }
